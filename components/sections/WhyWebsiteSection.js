@@ -112,14 +112,13 @@ export default function WhyWebsiteSection() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 fade-in-scale">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Miért <span className="text-green-500">Van Szükséged</span>{" "}
-            Weboldalra
+            Why You <span className="text-green-500">Need</span> a Website
           </h2>
           <div className="w-20 h-1 bg-green-500 mx-auto mb-6"></div>
           <p className="text-gray-400 max-w-3xl mx-auto">
-            A mai digitális világban egy erős online jelenlét nem csak opció —
-            hanem alapvető a sikerhez. Íme, miért van szüksége a
-            vállalkozásodnak profi weboldalra, és hogyan tudok segíteni.
+            In today's digital world, having a strong online presence isn't just
+            an option—it's essential for success. Here's why your business needs
+            a professional website and how I can help.
           </p>
         </div>
 
@@ -167,13 +166,13 @@ export default function WhyWebsiteSection() {
           <div className="flex flex-col md:flex-row gap-8 items-center">
             <div className="md:w-2/3">
               <h3 className="text-2xl md:text-3xl font-bold mb-4 text-white">
-                Miért <span className="text-green-500">Én</span> vagyok a
-                Legjobb Választásod
+                Miért <span className="text-green-500">vagyok</span> a legjobb
+                választásod
               </h3>
               <p className="text-gray-300 mb-6">
-                React, Next.js és modern webtechnológiák szakértőjeként olyan
-                weboldalakat készítek, amelyek nemcsak lenyűgözően néznek ki,
-                hanem kiválóan teljesítenek is. Íme, miben különböznek a
+                React, Next.js és modern webes technológiák szakértőjeként olyan
+                weboldalakat készítek, amelyek nemcsak lenyűgözőek, hanem
+                kiemelkedően jól is működnek. Íme, miben különböznek a
                 szolgáltatásaim:
               </p>
               <ul className="space-y-3 mb-8">
@@ -196,9 +195,9 @@ export default function WhyWebsiteSection() {
                   </div>
                   <span className="text-gray-300 group-hover:text-white transition-colors duration-300">
                     <strong className="text-green-400 group-hover:text-green-300 transition-colors duration-300">
-                      Egyedi Megoldások
+                      Egyedi megoldások
                     </strong>{" "}
-                    - Kifejezetten a vállalkozásod igényeire szabva
+                    – Az Ön konkrét üzleti igényeihez és céljaihoz szabva
                   </span>
                 </li>
                 <li className="flex items-start gap-2 group hover:transform hover:translate-x-1 transition-transform duration-300">
@@ -220,9 +219,10 @@ export default function WhyWebsiteSection() {
                   </div>
                   <span className="text-gray-300 group-hover:text-white transition-colors duration-300">
                     <strong className="text-green-400 group-hover:text-green-300 transition-colors duration-300">
-                      Modern Technológia
+                      Modern technológia
                     </strong>{" "}
-                    - A legújabb keretrendszerek a maximális teljesítményért
+                    – A legújabb keretrendszereket használva az optimális
+                    teljesítményért
                   </span>
                 </li>
                 <li className="flex items-start gap-2 group hover:transform hover:translate-x-1 transition-transform duration-300">
@@ -244,10 +244,10 @@ export default function WhyWebsiteSection() {
                   </div>
                   <span className="text-gray-300 group-hover:text-white transition-colors duration-300">
                     <strong className="text-green-400 group-hover:text-green-300 transition-colors duration-300">
-                      SEO-Optimalizált
+                      SEO-optimalizált
                     </strong>{" "}
-                    - Készült, hogy magasabb helyezést érjen el a keresőkben és
-                    több látogatót vonzzon
+                    – Magasabb keresőmotor-helyezésért és több látogatóért
+                    építve
                   </span>
                 </li>
                 <li className="flex items-start gap-2 group hover:transform hover:translate-x-1 transition-transform duration-300">
@@ -269,10 +269,9 @@ export default function WhyWebsiteSection() {
                   </div>
                   <span className="text-gray-300 group-hover:text-white transition-colors duration-300">
                     <strong className="text-green-400 group-hover:text-green-300 transition-colors duration-300">
-                      Reszponzív Dizájn
+                      Reszponzív design
                     </strong>{" "}
-                    - Tökéletes élmény minden eszközön, mobilon és asztali gépen
-                    is
+                    – Tökéletes élmény minden eszközön, mobilról asztalira
                   </span>
                 </li>
                 <li className="flex items-start gap-2 group hover:transform hover:translate-x-1 transition-transform duration-300">
@@ -294,18 +293,69 @@ export default function WhyWebsiteSection() {
                   </div>
                   <span className="text-gray-300 group-hover:text-white transition-colors duration-300">
                     <strong className="text-green-400 group-hover:text-green-300 transition-colors duration-300">
-                      Gyors, Megbízható Ügyfélszolgálat
+                      Folyamatos támogatás
                     </strong>{" "}
-                    - Mindig rendelkezésre állok, ha kérdésed vagy problémád van
+                    – Nem csak elkészítem, hanem hosszútávú segítséget is
+                    nyújtok
                   </span>
                 </li>
               </ul>
-              <a
-                href="#contact"
-                className="inline-block bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-lg shadow-lg transition-colors duration-300"
+              <button
+                onClick={() =>
+                  document
+                    .getElementById("contact")
+                    .scrollIntoView({ behavior: "smooth" })
+                }
+                className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg transition-colors font-medium inline-flex items-center gap-2 relative overflow-hidden group"
               >
-                Vegyük fel a kapcsolatot
-              </a>
+                <span className="relative z-10">Beszéljünk a projektedről</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-5 w-5 relative z-10 group-hover:transform group-hover:translate-x-1 transition-transform duration-300"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M14 5l7 7m0 0l-7 7m7-7H3"
+                  />
+                </svg>
+                {/* Gomb háttér animáció */}
+                <div className="absolute inset-0 bg-green-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300 scale-0 group-hover:scale-100 rounded-full group-hover:rounded-none transition-all duration-500 origin-center"></div>
+              </button>
+            </div>
+            <div className="md:w-1/3 bg-gray-700/30 p-6 rounded-lg hover:transform hover:scale-[1.02] transition-transform duration-300">
+              <div className="text-center mb-4 hover:transform hover:scale-105 transition-transform duration-300">
+                <span className="text-4xl font-bold text-green-500">93%</span>
+                <p className="text-gray-400 text-sm">
+                  az üzleti interakciók kezdete online történik
+                </p>
+              </div>
+              <div className="h-px bg-gray-700 my-4"></div>
+              <div className="space-y-3">
+                <div className="text-center hover:transform hover:scale-105 hover:translate-y-[-2px] transition-transform duration-300">
+                  <span className="text-2xl font-bold text-white">88%</span>
+                  <p className="text-gray-400 text-sm">
+                    a vásárlók kutatnak vásárlás előtt
+                  </p>
+                </div>
+                <div className="text-center hover:transform hover:scale-105 hover:translate-y-[-2px] transition-transform duration-300">
+                  <span className="text-2xl font-bold text-white">71%</span>
+                  <p className="text-gray-400 text-sm">
+                    a felhasználók mobilról böngésznek
+                  </p>
+                </div>
+                <div className="text-center hover:transform hover:scale-105 hover:translate-y-[-2px] transition-transform duration-300">
+                  <span className="text-2xl font-bold text-white">39%</span>
+                  <p className="text-gray-400 text-sm">
+                    több időt töltenek a közösségi médiában, mint email
+                    olvasással
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
