@@ -36,6 +36,13 @@ export default function HeroSection({ scrollToSection }) {
 
   useEffect(() => {
     setBgLoaded(true);
+
+    const video = videoRef.current;
+    if (video) {
+      video.play().catch((e) => {
+        console.log("Videó lejátszás blokkolva az első betöltéskor:", e);
+      });
+    }
   }, []);
 
   useEffect(() => {
@@ -44,12 +51,14 @@ export default function HeroSection({ scrollToSection }) {
         const video = videoRef.current;
         if (!video) return;
         if (entry.isIntersecting) {
-          video.play();
+          video.play().catch((e) => {
+            console.log("Videó lejátszás blokkolva:", e);
+          });
         } else {
           video.pause();
         }
       },
-      { threshold: 0.2 }
+      { threshold: 0.5 }
     );
 
     if (videoRef.current) {
@@ -68,12 +77,10 @@ export default function HeroSection({ scrollToSection }) {
     >
       {/* Háttér videó */}
       <div
-        className={`absolute inset-0 bg-cover bg-center bg-no-repeat z-0 transition-all duration-[2500ms] ease-out ${
-          bgLoaded ? "scale-100 opacity-20" : "scale-110 opacity-0"
+        className={`absolute bg-[url('/hero.gif')] bg-cover inset-0 z-0 transition-all duration-[2500ms] ease-out ${
+          bgLoaded ? "opacity-20 scale-100" : "opacity-0 scale-110"
         }`}
-      >
-        <div className="relative w-full bg-cover bg-[url('/heroGif.gif')] h-screen overflow-hidden"></div>
-      </div>
+      ></div>
 
       {/* Animált szöveges rész */}
       <motion.div
@@ -82,7 +89,7 @@ export default function HeroSection({ scrollToSection }) {
         initial="hidden"
         animate="visible"
       >
-        <div className="flex flex-col md:flex-row items-center justify-between gap-12">
+        <div className="flex mt-12 flex-col md:flex-row items-center justify-between gap-12">
           <motion.div className="md:w-1/2" variants={itemVariants}>
             <h1 className="text-4xl md:text-6xl font-bold mb-4">
               Szia, <span className="text-green-500 inline-block">Roland</span>{" "}
@@ -95,7 +102,7 @@ export default function HeroSection({ scrollToSection }) {
               Modern, reszponzív weboldalakat készítek React, Next.js és
               Tailwind CSS segítségével. Építsünk együtt valami nagyszerűt!
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex  flex-wrap gap-4">
               <a
                 href="#portfolio"
                 className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg transition-colors font-medium inline-block"
@@ -125,7 +132,7 @@ export default function HeroSection({ scrollToSection }) {
                 ></div>
               </div>
 
-              <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-green-500/30 transition-all duration-300 hover:border-green-400/80 z-10">
+              <div className="relative mb-4 w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-green-500/30 transition-all duration-300 hover:border-green-400/80 z-10">
                 <Image
                   src="/me.JPG"
                   alt="Roland"

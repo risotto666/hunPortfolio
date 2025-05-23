@@ -69,7 +69,7 @@ export default function AboutSection() {
               {/* Kép konténer */}
               <div className="relative rounded-lg shadow-xl overflow-hidden transform transition-all duration-500 group-hover:scale-[1.03] group-hover:rotate-2 z-10">
                 <Image
-                  src="/developer.jpg"
+                  src="/about.png"
                   alt="Rólam"
                   width={500}
                   height={600}

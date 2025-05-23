@@ -37,12 +37,14 @@ export default function Header({ activeSection }) {
             className="text-2xl font-bold text-green-500"
           >
             Roland
+            <span className="ml-6">
+              <LanguageSwitcher />
+            </span>
           </motion.div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:block">
             <ul className="flex space-x-8">
-              <LanguageSwitcher />
               {navItems.map((item) => (
                 <motion.li
                   key={item.id}
