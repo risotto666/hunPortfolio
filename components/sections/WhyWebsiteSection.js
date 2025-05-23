@@ -112,13 +112,15 @@ export default function WhyWebsiteSection() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 fade-in-scale">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Why You <span className="text-green-500">Need</span> a Website
+            Miért <span className="text-green-500">van szükséged</span>{" "}
+            weboldalra
           </h2>
           <div className="w-20 h-1 bg-green-500 mx-auto mb-6"></div>
           <p className="text-gray-400 max-w-3xl mx-auto">
-            In today's digital world, having a strong online presence isn't just
-            an option—it's essential for success. Here's why your business needs
-            a professional website and how I can help.
+            A mai digitális világban az erős online jelenlét nem csupán
+            választás kérdése — elengedhetetlen a sikerhez. Íme, miért van
+            szüksége a vállalkozásodnak egy profi weboldalra, és hogyan tudok
+            segíteni ebben.
           </p>
         </div>
 
