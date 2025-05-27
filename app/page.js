@@ -9,6 +9,7 @@ import WhyWebsiteSection from "@/components/sections/WhyWebsiteSection";
 import ServicesSection from "@/components/sections/ServicesSection";
 import PortfolioSection from "@/components/sections/PortfolioSection";
 import ContactSection from "@/components/sections/ContactSection";
+import ScrollToTopButton from "@/components/FloatingTopButton";
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState("hero");
@@ -63,6 +64,7 @@ export default function Home() {
         <ServicesSection />
         <PortfolioSection />
         <ContactSection />
+        <ScrollToTopButton />
       </main>
       <Footer />
     </div>

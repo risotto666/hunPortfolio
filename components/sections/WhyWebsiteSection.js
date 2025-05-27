@@ -54,7 +54,7 @@ export default function WhyWebsiteSection() {
       title: "Költséghatékony marketing",
       description:
         "A weboldalak az egyik legjobb megtérülést biztosítják marketing terén, olcsóbbak a hagyományos reklámoknál, jobb eredményekkel.",
-      stat: "40x",
+      stat: "40%",
       statDescription: "megtérülés a hagyományos marketinghez képest",
     },
     {

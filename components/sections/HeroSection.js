@@ -45,31 +45,6 @@ export default function HeroSection({ scrollToSection }) {
     }
   }, []);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        const video = videoRef.current;
-        if (!video) return;
-        if (entry.isIntersecting) {
-          video.play().catch((e) => {
-            console.log("Videó lejátszás blokkolva:", e);
-          });
-        } else {
-          video.pause();
-        }
-      },
-      { threshold: 0.5 }
-    );
-
-    if (videoRef.current) {
-      observer.observe(videoRef.current);
-    }
-
-    return () => {
-      if (videoRef.current) observer.unobserve(videoRef.current);
-    };
-  }, []);
-
   return (
     <section
       id="hero"
@@ -77,8 +52,8 @@ export default function HeroSection({ scrollToSection }) {
     >
       {/* Háttér videó */}
       <div
-        className={`absolute bg-[url('/hero.gif')] bg-cover inset-0 z-0 transition-all duration-[2500ms] ease-out ${
-          bgLoaded ? "opacity-20 scale-100" : "opacity-0 scale-110"
+        className={`absolute bg-[url('/bg.jpg')]  bg-cover bg-bottom bg-no-repeat w-full h-screen inset-0 z-0 transition-all duration-300 ease-out ${
+          bgLoaded ? "opacity-20 scale-100" : "opacity-10 scale-75"
         }`}
       ></div>
 
