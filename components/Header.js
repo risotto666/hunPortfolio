@@ -20,7 +20,7 @@ export default function Header({ activeSection }) {
   const navItems = [
     { id: "hero", label: "Kezdőlap" },
     { id: "about", label: "Rólam" },
-    { id: "why-website", label: "Miért weboldal?" },
+    { id: "why-website", label: "Miért kell weboldal?" },
     { id: "services", label: "Szolgáltatások" },
     { id: "portfolio", label: "Portfólió" },
     { id: "contact", label: "Kapcsolat" },
@@ -34,9 +34,9 @@ export default function Header({ activeSection }) {
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
-            className="text-2xl font-bold text-green-500"
+            className="text-sm md:text-lg font-extrabold text-transparent bg-clip-text bg-gradient-to-r uppercase from-green-400 via-emerald-400 to-lime-100 tracking-wide"
           >
-            Roland
+            Tóth Roland - Webfejlesztő
             <span className="ml-6">
               <LanguageSwitcher />
             </span>

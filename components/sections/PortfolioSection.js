@@ -79,9 +79,18 @@ export default function PortfolioSzekcio() {
             <span className="text-green-500">Portfólióm</span>
           </h2>
           <div className="w-20 h-1 bg-green-500 mx-auto mb-6"></div>
-          <p className="text-gray-400 max-w-2xl mx-auto">
+          <p className="text-gray-100 max-w-2xl mx-auto">
             Nézd meg néhány legutóbbi projektemet, amelyeket React, Next.js és
             Tailwind CSS segítségével készítettem.
+          </p>
+          <p className="text-gray-400 max-w-2xl mx-auto mt-4">
+            Az alábbiakban néhány bemutató jellegű weboldalt és projektet
+            láthatsz, amelyeket gyakorlás és portfólióépítés céljából
+            készítettem. Fontos megjegyezni, hogy ezek nem élő, élesben működő
+            oldalak, hanem kizárólag a tudásom és stílusom bemutatását
+            szolgálják. A célom, hogy letisztult, modern és felhasználóbarát
+            felületeket hozzak létre, amelyek megfelelnek a mai webes
+            elvárásoknak.
           </p>
         </div>
         <div

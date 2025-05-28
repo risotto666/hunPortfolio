@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function ContactSection() {
   return (
@@ -178,9 +179,8 @@ export default function ContactSection() {
             <form
               action="#"
               className="space-y-6"
-              onSubmit={(e) => {
-                e.preventDefault();
-                alert("Üzenet elküldve! Köszönöm, hogy írtál.");
+              onSubmit={() => {
+                alert("Küldve");
               }}
             >
               <div>
