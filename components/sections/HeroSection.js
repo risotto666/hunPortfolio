@@ -65,8 +65,9 @@ export default function HeroSection({ scrollToSection }) {
                 Webfejlesztő és dizájner
               </h2>
               <p className="text-gray-200 text-lg mb-8 max-w-xl">
-                Modern, reszponzív weboldalakat készítek React, Next.js és
-                Tailwind CSS segítségével. Építsünk együtt valami nagyszerűt!
+                Weboldalakat készítek vállalkozásoknak és mindenkinek, aki
+                online szeretne kitűnni. Dolgozzunk együtt a digitális
+                megjelenéseden!
               </p>
               <div className="flex flex-wrap gap-4">
                 <a
