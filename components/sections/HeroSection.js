@@ -19,20 +19,20 @@ const itemVariants = {
 export default function HeroSection({ scrollToSection }) {
   return (
     <Parallax
-      bgImage="/bg.jpg"
+      bgImage="/bg3.png"
       strength={200}
-      blur={{ min: -15, max: 15 }}
+      blur={{ min: -5, max: 5 }}
       bgImageStyle={{
         objectFit: "cover",
-        objectPosition: "bottom",
-        opacity: 0.2,
+        objectPosition: "center",
+        opacity: 0.6,
         width: "100%",
         height: "100%",
       }}
     >
       <section
         id="hero"
-        className="min-h-screen flex items-center justify-center pt-20 relative"
+        className="min-h-screen  flex items-center justify-center pt-20 relative"
       >
         <motion.div
           className="container mx-auto px-4 relative z-10"
@@ -65,9 +65,9 @@ export default function HeroSection({ scrollToSection }) {
                 Webfejlesztő és dizájner
               </h2>
               <p className="text-gray-200 text-lg mb-8 max-w-xl">
-                Weboldalakat készítek vállalkozásoknak és mindenkinek, aki
-                online szeretne kitűnni. Dolgozzunk együtt a digitális
-                megjelenéseden!
+                „Weboldalakat készítek vállalkozásoknak és mindenkinek, aki
+                online szeretne kitűnni – akár angol nyelven is. Dolgozzunk
+                együtt a digitális megjelenéseden!”
               </p>
               <div className="flex flex-wrap gap-4">
                 <a
@@ -121,7 +121,7 @@ export default function HeroSection({ scrollToSection }) {
 
                 <div className="relative mb-4 w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-green-500/30 transition-all duration-300 hover:border-green-400/80 z-10">
                   <Image
-                    src="/me.JPG"
+                    src="/tr2.png"
                     alt="Roland"
                     fill
                     className="object-cover"

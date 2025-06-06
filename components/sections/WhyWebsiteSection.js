@@ -172,10 +172,9 @@ export default function WhyWebsiteSection() {
                 választásod
               </h3>
               <p className="text-gray-300 mb-6">
-                React, Next.js és modern webes technológiák szakértőjeként olyan
-                weboldalakat készítek, amelyek nemcsak lenyűgözőek, hanem
-                kiemelkedően jól is működnek. Íme, miben különböznek a
-                szolgáltatásaim:
+                Modern webes technológiák szakértőjeként olyan weboldalakat
+                készítek, amelyek nemcsak lenyűgözőek, hanem kiemelkedően jól is
+                működnek. Íme, miben különböznek a szolgáltatásaim:
               </p>
               <ul className="space-y-3 mb-8">
                 <li className="flex items-start gap-2 group hover:transform hover:translate-x-1 transition-transform duration-300">
@@ -295,10 +294,10 @@ export default function WhyWebsiteSection() {
                   </div>
                   <span className="text-gray-300 group-hover:text-white transition-colors duration-300">
                     <strong className="text-green-400 group-hover:text-green-300 transition-colors duration-300">
-                      Folyamatos támogatás
+                      Gyors, igényes munka
                     </strong>{" "}
-                    – Nem csak elkészítem, hanem hosszútávú segítséget is
-                    nyújtok
+                    – Egy egyszerű, reszponzív bemutatkozó weboldal már 50.000
+                    Ft-tól elérhető, és akár 2 napon belül elkészül
                   </span>
                 </li>
               </ul>

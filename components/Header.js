@@ -36,7 +36,6 @@ export default function Header({ activeSection }) {
             transition={{ duration: 0.5 }}
             className="text-sm md:text-lg font-extrabold text-transparent bg-clip-text bg-gradient-to-r uppercase from-green-400 via-emerald-400 to-lime-100 tracking-wide"
           >
-            Tóth Roland - Webfejlesztő
             <span className="ml-6">
               <LanguageSwitcher />
             </span>

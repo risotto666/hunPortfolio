@@ -69,10 +69,10 @@ export default function AboutSection() {
               {/* Kép konténer */}
               <div className="relative rounded-lg shadow-xl overflow-hidden transform transition-all duration-500 group-hover:scale-[1.03] group-hover:rotate-2 z-10">
                 <Image
-                  src="/about.png"
+                  src="/me2.png"
                   alt="Rólam"
-                  width={500}
-                  height={600}
+                  width={300}
+                  height={200}
                   className="w-full h-auto rounded-lg transition-all duration-700 group-hover:brightness-110 group-hover:contrast-110"
                 />
                 {/* Overlay effekt */}
